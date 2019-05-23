@@ -27,6 +27,26 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1400 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+
+![Docker Logo](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
+# Starting you Docker environment
+To start you docker environment please follow the next steps.
+1. Open your favorite command-line interface application such as **Terminal** for macOS or **Powershell** for Windows.
+2. Change directory into the 'immersive' folder.
+3. To start you docker environment execute the following command: `docker-compose up -d`
+4. To enter your container execute the following command: `docker exec -it immersive /bin/bash`
+5. To exit your container simply type `exit` 
+6. To shutdown your container execute the following command: `docker-compose down`
+
+To see you website, open up your internet browser and go to http://localhost:8080
+
+To access adminer, open up your internet browser and go to http://localhost:8081
+
+### Composer
+To use composer make sure that you use the right container and that you have the composer.json file.
+1. Enter your container using the following command: `docker exec -it immersive /bin/bash`
+2. Install dependencies by executing the following command: `composer install`
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
