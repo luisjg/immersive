@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  # WEBSERVER
+  webserver:
+    container_name: immersive
+    build:
+      context: .
+    ports:
+      - '8080:80'
+    volumes:
+      - .:/var/www/
+    links:
+      - db
+
+  # COMPOSER
+  composer:
+    restart: 'no'
+    container_name: immersive_composer
+    image: composer:latest
+    command: install
+    volumes:
+      - .:/app/
+
+  # ADMINER
+  adminer:
+    container_name: immersive_adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+
+  # MYSQL DB
+  db:
+    image: mysql:5.6.41
+    container_name: immersive_db
+    volumes:
+      - db_data:/var/lib/mysql/
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: immersivepass
+      MYSQL_DATABASE: immersive
+      MYSQL_USER: immersive
+      MYSQL_PASSWORD: immersivepass
+
+volumes:
+    db_data:
