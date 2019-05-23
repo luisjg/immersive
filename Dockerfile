@@ -40,7 +40,7 @@ RUN apt-get update \
   && a2enmod rewrite \
 
 # Set servername
-  && echo ServerName localhost >> /etc/apache2/apache2.conf
+  && echo ServerName localhost >> /etc/apache2/apache2.conf 
 
 # Set environment variables
 ENV APACHE_RUN_USER=www-data \
@@ -54,7 +54,14 @@ ENV APACHE_RUN_USER=www-data \
 RUN mkdir -p $APACHE_RUN_DIR $APACHE_LOCK_DIR $APACHE_LOG_DIR \
 
 # Chown directories owned by apache
-  && chown -hR www-data:www-data /var/www/ 
+  && chown -hR www-data:www-data /var/www/ \
+
+# Download composer
+  && php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
+  && php -r "if (hash_file('sha384', 'composer-setup.php') === '48e3236262b34d30969dca3c37281b3b4bbe3221bda826ac6a9a62d6444cdb0dcd0615698a5cbe587c3f0fe57a54d8f5') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" \
+  && php composer-setup.php --install-dir=/usr/local/bin/ --filename=composer \
+  && php -r "unlink('composer-setup.php');" \
+  && echo "alias composer=/usr/local/bin/composer" >> ~/.bashrc
 
 # Set /var/www/ as working directory
 WORKDIR /var/www/
