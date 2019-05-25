@@ -1,25 +1,21 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<div align="center">
+    <img src="https://www.metalab.csun.edu/img/logo/metalab-logo.svg" width="15%">
+    <h1>IMMERSIVE 2019: Back End Track</h1>
+</div>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# Table of Contents
+- [About META+LAB IMMERSIVE](#about-meta+lab-immersive)
+- [Learning Laravel](#learning-laravel)
+- [Instructions](#instructions)
+- [Starting your Docker environment](#starting-your-docker-environment)
+    - [Composer](#composer)
+    - [Artisan](#artisan)
+- [License](#license)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## About META<span style="color:#d00d2d;">+</span>LAB IMMERSIVE
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The META<span style="color:#d00d2d;">+</span>LAB IMMERSIVE is a 2 week bootcamp with the aim of teaching participants the basics of web development. It is composed of 3 tracks: Front End which includes UI/UX, Back End with an emphasis on Laravel, and Operations with an accredited AWS Solutions Architect lecturer.
 
 ## Learning Laravel
 
@@ -27,15 +23,28 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1400 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Instructions
 
-![Docker Logo](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
-# Starting you Docker environment
+Before we begin your development machine **must** have the following dependencies:
++ Git
++ Docker with Docker Compose
++ A Text Editor or IDE of your choice
+
+Once all of the dependencies are met we can get started by cloning the repository into any directory. To achieve this fire up your favorite command-line application and issue `$ git clone https://github.com/luisjg/immersive.git`. This will make an `immersive` directory on your machine. Once you successfully complete this step you can continue on to [Starting your Docker environment](#starting-your-docker-environment) section.
+
+<div align="center">
+    ![Docker Logo](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
+</div>
+
+## Starting your Docker environment
+
 To start you docker environment please follow the next steps.
+
 1. Open your favorite command-line interface application such as **Terminal** for macOS or **Powershell** for Windows.
 2. Change directory into the 'immersive' folder.
 3. To start you docker environment execute the following command: `docker-compose up -d`
 4. To enter your container execute the following command: `docker exec -it immersive /bin/bash`
-5. To exit your container simply type `exit` 
+5. To exit your container simply type `exit`
 6. To shutdown your container execute the following command: `docker-compose down`
 
 To see you website, open up your internet browser and go to http://localhost:8080
@@ -43,49 +52,18 @@ To see you website, open up your internet browser and go to http://localhost:808
 To access adminer, open up your internet browser and go to http://localhost:8081
 
 ### Composer
-To use composer make sure that you use the right container and that you have the composer.json file.
+
+To use composer make sure that you use the right container which has the composer.json file.
+
 1. Enter your container using the following command: `docker exec -it immersive /bin/bash`
 2. Install dependencies by executing the following command: `composer install`
 
-## Laravel Sponsors
+### Artisan
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+To use artisan make sure that you use the right container.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. Enter your container using the following command: `docker exec -it immersive /bin/bash`
+2. Run your desired artisan commands by executing the following command on your favorite terminal: `php artisan`.
 
 ## License
 
