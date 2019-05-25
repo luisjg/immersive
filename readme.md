@@ -33,7 +33,7 @@ Before we begin your development machine **must** have the following dependencie
 Once all of the dependencies are met we can get started by cloning the repository into any directory. To achieve this fire up your favorite command-line application and issue `$ git clone https://github.com/luisjg/immersive.git`. This will make an `immersive` directory on your machine. Once you successfully complete this step you can continue on to [Starting your Docker environment](#starting-your-docker-environment) section.
 
 <div align="center">
-    ![Docker Logo](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
+    <img src="https://www.docker.com/sites/default/files/social/docker_facebook_share.png">
 </div>
 
 ## Starting your Docker environment
@@ -41,7 +41,7 @@ Once all of the dependencies are met we can get started by cloning the repositor
 To start you docker environment please follow the next steps.
 
 1. Open your favorite command-line interface application such as **Terminal** for macOS or **Powershell** for Windows.
-2. Change directory into the 'immersive' folder.
+2. Change directory into the `immersive` folder.
 3. To start you docker environment execute the following command: `docker-compose up -d`
 4. To enter your container execute the following command: `docker exec -it immersive /bin/bash`
 5. To exit your container simply type `exit`
