@@ -38,16 +38,16 @@ Once all of the dependencies are met we can get started by cloning the repositor
 
 ## Starting your Docker environment
 
-To start you docker environment please follow the next steps.
+To start your docker environment please follow the next steps.
 
 1. Open your favorite command-line interface application such as **Terminal** for macOS or **Powershell** for Windows.
 2. Change directory into the `immersive` folder.
-3. To start you docker environment execute the following command: `docker-compose up -d`
+3. To start your docker environment execute the following command: `docker-compose up -d`
 4. To enter your container execute the following command: `docker exec -it immersive /bin/bash`
 5. To exit your container simply type `exit`
-6. To shutdown your container execute the following command: `docker-compose down`
+6. To shutdown your containers execute the following command: `docker-compose down`
 
-To see you website, open up your internet browser and go to http://localhost:8080
+To see your website, open up your internet browser and go to http://localhost:8080
 
 To access adminer, open up your internet browser and go to http://localhost:8081
 
