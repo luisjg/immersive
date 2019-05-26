@@ -87,14 +87,14 @@ To access adminer, open up your internet browser and go to `http://localhost:808
 
 To use composer make sure that you use the right container which has the composer.json file.
 
-1. Enter your container using the following command: `docker exec -it immersive /bin/bash`
-2. Install dependencies by executing the following command: `composer install`
+1. Enter your container using the following command: `docker exec -it immersive /bin/bash`.
+2. Install dependencies by executing the following command: `composer install`.
 
 ### Artisan
 
 To use artisan make sure that you use the right container.
 
-1. Enter your container using the following command: `docker exec -it immersive /bin/bash`
+1. Enter your container using the following command: `docker exec -it immersive /bin/bash`.
 2. Run your desired artisan commands by executing the following command on your favorite terminal: `php artisan`.
 
 ## License
