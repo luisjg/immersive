@@ -16,7 +16,7 @@
 
 ## About META<span style="color:#d00d2d;">+</span>LAB IMMERSIVE
 
-The META<span style="color:#d00d2d;">+</span>LAB IMMERSIVE is a 2 week bootcamp with the aim of teaching participants the basics of web development. It is composed of 3 tracks: Front End which includes UI/UX, Back End with an emphasis on Laravel, and Operations with an accredited AWS Solutions Architect lecturer.
+The META<span style="color:#d00d2d;">+</span>LAB IMMERSIVE is a 2 week boot-camp with the aim of teaching participants the basics of web development. It is composed of 3 tracks: Front End which includes UI/UX, Back End with an emphasis on Laravel, and Operations with an accredited AWS Solutions Architect lecturer.
 
 ## Learning Laravel
 
@@ -26,11 +26,16 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 ## Instructions
 
-Before we begin your development machine **must** have the following dependencies:
+Before we begin, your development machine **must** have the following dependencies installed:
 
-+ Git
-+ Docker with Docker Compose
-+ A Text Editor or IDE of your choice
++ [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) or [GitHub Desktop](https://desktop.github.com/)
++ [Docker with Docker Compose](https://docs.docker.com/)
++ A Text Editor or IDE of your choice:
+    + Atom
+    + SublimeText
+    + Brackets
+    + Notepad++
+    + PhpStorm
 
 Once all of the dependencies are met we can get started by cloning the repository into any directory. To achieve this fire up your favorite command-line application and issue `$ git clone https://github.com/luisjg/immersive.git`. This will make an `immersive` directory on your machine. Once you successfully complete this step you can continue on to the next section.
 
